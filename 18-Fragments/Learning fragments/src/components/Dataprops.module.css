@@ -1,0 +1,11 @@
+.tajItem{
+  background-color: bisque;
+}
+.tajSpan{
+  font-weight: 500;
+  color: red;
+}
+
+.button {
+  float: right;
+}
