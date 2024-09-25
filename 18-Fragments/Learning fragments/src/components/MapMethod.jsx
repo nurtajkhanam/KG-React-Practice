@@ -1,6 +1,13 @@
+import { useState } from "react";
 import Dataprops from "./Dataprops";
 
 const MapMethod = ({ items }) => {
+  let [activeItems, setActiveItems] = useState([]);
+  let onBuyButton = (item, event) => {
+    let newAddedItems = [...activeItems, item];
+    setActiveItems(newAddedItems);
+  };
+
   return (
     <div>
       <ul className="list-group">
@@ -8,7 +15,8 @@ const MapMethod = ({ items }) => {
           <Dataprops
             key={item}
             food={item}
-            handleBuyButton={() => console.log(`${item} added to the cart`)}
+            bought={activeItems.includes(item)}
+            handleBuyButton={(event) => onBuyButton(item, event)}
           />
         ))}
       </ul>
