@@ -1,10 +1,10 @@
 import styles from "./Dataprops.module.css";
 
-const Dataprops = ({ food }) => {
-  const handleBuyButton = () => {
-    console.log(`${food} being bought`);
-    // console.log(e);
-  };
+const Dataprops = ({ food, handleBuyButton }) => {
+  // const handleBuyButton = () => {
+  //   console.log(`${food} being bought`);
+  //   // console.log(e);
+  // };
 
   return (
     <li className={`${styles.tajItem} list-group-item`}>

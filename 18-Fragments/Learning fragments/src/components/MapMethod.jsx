@@ -5,7 +5,11 @@ const MapMethod = ({ items }) => {
     <div>
       <ul className="list-group">
         {items.map((item) => (
-          <Dataprops key={item} food={item} />
+          <Dataprops
+            key={item}
+            food={item}
+            handleBuyButton={() => console.log(`${item} added to the cart`)}
+          />
         ))}
       </ul>
     </div>
