@@ -1,0 +1,9 @@
+.container {
+  height: 70px;
+  width: 80%;
+  border: 2px solid black;
+}
+.heading{
+  color: crimson;
+  text-align: center;
+}

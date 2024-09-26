@@ -1,0 +1,12 @@
+.listContainer{
+  align-content: center;
+  font-weight: 400;
+  width: 400px;
+
+}
+.listItem {
+  background-color: bisque;
+}
+.button {
+  float: right;
+}
